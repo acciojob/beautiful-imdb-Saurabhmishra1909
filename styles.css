@@ -1,2 +1,55 @@
 
 /* Your CSS Code here. */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f5f5f5;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #121212 0%, #1e1e1e 100%);
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        /* Movie poster styling */
+        .moviePic {
+            height: 450px;
+            width: 300px;
+            opacity: 0.9;
+            border-radius: 8px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+            transition: all 0.3s ease;
+            border: 3px solid #f5c518;
+            object-fit: cover;
+        }
+
+        .moviePic:hover {
+            opacity: 1;
+            transform: scale(1.02);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.6);
+        }
+
+        /* Movie description styling */
+        .movieDetail {
+            position: relative;
+            top: 20px;
+            width: 80%;
+            text-align: center;
+            font-size: 18px;
+            line-height: 1.6;
+            color: #ffffff;
+            background-color: rgba(30, 30, 30, 0.8);
+            padding: 30px;
+            border-radius: 8px;
+            margin-top: 40px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+            border-left: 4px solid #f5c518;
+        }
